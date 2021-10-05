@@ -10,7 +10,7 @@
 
 ####Solution Approach
 - Create an endpoint named search, should accept searchKeywords and bring related results from the database
-    - I created a GET endpoint that returns the list of record that match the regex value of the searchKeayboard from the defined attributespaginated data (https://tr1pp-gateway.herokuapp.com/search?searchKeayboard=ola) or (https://tr1pp-search-service.herokuapp.com?searchKeayboard=ola)
+    - I created a GET endpoint that returns the list of record that match the regex value of the searchKeayboard from the defined attributespaginated data (https://tr1pp-gateway.herokuapp.com/search/log?searchKeayboard=ola) or (https://tr1pp-search-service.herokuapp.com/log?searchKeayboard=ola)
     
 - Emit all search results to logger service in form of an event
     - I publish the result of the seach to `LOGGER_EVENT` using RABITTMQ/AMQ package
